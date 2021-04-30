@@ -85,7 +85,7 @@ namespace cd_osk
         {
             if (LastDrawX != X || LastDrawY != Y)
             {
-                DoDraw(LastDrawX, LastDrawY, vgaDriver, LastDrawPosCols, true);
+                DoDraw(LastDrawX, LastDrawY, vgaDriver, LastDrawPosCols, false);
 
                 for (ushort x = 0; x < 20; x++) for (ushort y = 0; y < 20; y++) LastDrawPosCols[y][x] = vgaDriver.GetPixel((ushort)(X + x), (ushort)(Y + y));
 
